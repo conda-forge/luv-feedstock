@@ -2,7 +2,7 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
-cmake -S . -B build \
+cmake ${CMAKE_ARGS} -S . -B build \
     -DWITH_LUA_ENGINE=LuaJIT \
     -DBUILD_SHARED_LIBS=ON \
     -DWITH_SHARED_LIBUV=ON \
