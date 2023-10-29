@@ -19,11 +19,10 @@ requirements:
     - {{ compiler('c') }}
     - cmake
     - lua-compat-5.3-c
-    - luajit-openresty
-    - libuv
     - make
   host:
     - libuv
+    - luajit-openresty
   run:
     - libuv
 
@@ -34,7 +33,6 @@ test:
 about:
   home: https://github.com/luvit/{{ name }}
   license: Apache-2.0
-  license_family: APACHE
   license_file: LICENSE.txt
   summary: Bare libuv bindings for lua
   dev_url: https://github.com/luvit/{{ name }}
