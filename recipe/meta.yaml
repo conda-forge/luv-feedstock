@@ -12,23 +12,24 @@ source:
 
 build:
   number: 0
-  skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - cmake
     - lua-compat-5.3-c
-    - make
+    - make  # [unix]
+    - ninja  # [win]
   host:
     - libuv
     - luajit-openresty
   run:
     - libuv
+    - luajit-openresty  # [win]
 
 test:
   commands:
-    - test -f $PREFIX/lib/libluv${SHLIB_EXT}
+    - test -f $PREFIX/lib/libluv${SHLIB_EXT}  # [unix]
 
 about:
   home: https://github.com/luvit/{{ name }}
