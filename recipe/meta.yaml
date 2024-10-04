@@ -17,7 +17,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    # - {{ stdlib('c') }}
+    - {{ stdlib('c') }}
     - cmake
     - lua-compat-5.3-c
     - make  # [unix]
