@@ -1,13 +1,13 @@
 context:
-  version: 1.48.0
+  version: 1.51.0
 
 package:
   name: luv
   version: ${{ version }}
 
 source:
-  url: https://github.com/luvit/luv/archive/${{ version }}-2.tar.gz
-  sha256: e64cd8a0197449288b37df6ca058120e8d2308fc305f543162b5bf3e92273a05
+  url: https://github.com/luvit/luv/archive/${{ version }}-1.tar.gz
+  sha256: d4a11178ae8e16ba5886799ea91905dd9b0b479c75aebd67866d37373e41526f
 
 build:
   number: 0
